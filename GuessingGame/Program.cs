@@ -8,7 +8,7 @@ namespace GuessingGame
         {
             bool realInteger = false;
             Random random = new Random();
-            int randomNumber = random.Next(21);
+            int randomNumber = random.Next(1, 21);
             int userNumberGuess = 0;
 
             Console.WriteLine("Hello! Welcome to the Guessing Game!");
@@ -34,22 +34,6 @@ namespace GuessingGame
             {
                 Console.WriteLine($"You got it, Dude!  The correct number is {userNumberGuess}");
             }
-
-
-            /*           userNumberGuess = int.Parse(userInput);
-             *           if (userNumberGuess < randomNumber)
-                       {
-                           Console.WriteLine("Guess Higher");
-                       }
-                       else if (userNumberGuess == randomNumber)
-                       {
-                           Console.WriteLine("You got it, Dude!");
-                       }
-                       else
-                       {
-                           Console.WriteLine("Guess Lower");
-                       }
-            */
         }
     }
 }
