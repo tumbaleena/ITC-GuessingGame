@@ -19,12 +19,12 @@ namespace GuessingGame
 
             if (userNumberGuess > 20 || userNumberGuess < 1 || realInteger == false)
             {
-                Console.WriteLine("Sorry, the number needs to be a whole number between 1 and 20.");
+                Console.WriteLine($"Sorry, the number needs to be a whole number between 1 and 20.");
             }
 
             if (userNumberGuess < randomNumber)
             {
-                Console.WriteLine($"Guess Higher! (more than {userNumberGuess}");
+                Console.WriteLine($"Guess Higher! (more than {userNumberGuess})");
             }
             else if (userNumberGuess > randomNumber)
             {
