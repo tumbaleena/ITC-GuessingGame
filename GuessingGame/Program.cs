@@ -17,7 +17,7 @@ namespace GuessingGame
 
             realInteger = int.TryParse(userInput, out userNumberGuess);
 
-            if (userNumberGuess > 20 || userNumberGuess < 1 || realInteger == false)
+            if (realInteger == false || userNumberGuess > 20 || userNumberGuess < 1)
             {
                 Console.WriteLine($"Sorry, the number needs to be a whole number between 1 and 20.");
             }
