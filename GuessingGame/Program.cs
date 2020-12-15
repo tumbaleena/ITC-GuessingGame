@@ -15,6 +15,7 @@ namespace GuessingGame
             Console.Write("Please guess a number between 1 and 20: ");
             string userInput = Console.ReadLine();
 
+            // this is our 'true or false' check.  it tries to parse the string into an integer, and if it can, it will output the userInput to the variable 'userNumberGuess'
             realInteger = int.TryParse(userInput, out userNumberGuess);
 
             if (realInteger == false || userNumberGuess > 20 || userNumberGuess < 1)
