@@ -58,6 +58,11 @@ namespace GuessingGame
                 guessCount = guessCount + 1;
                 Console.WriteLine($"It took you {guessCount} tries to guess this random number.");
             }
+            
+            Console.WriteLine();
+            Console.WriteLine("Press Enter to quit.");
+            Console.ReadLine();
+            
         }
     }
 }
